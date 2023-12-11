@@ -19,4 +19,9 @@ public interface Vendavel {
      * @param quantidade A quantidade a ser vendida.
      */
     void vender(int quantidade);
+
+    /**
+     * @param quantidade
+     */
+    void comprar(int quantidade);
 }

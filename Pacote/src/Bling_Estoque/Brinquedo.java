@@ -85,4 +85,9 @@ public class Brinquedo extends Produto implements Vendavel {
 		return "Brinquedo material:" + material + ", nome:" + nome + ", preco:" + preco + ", quantEmEstoque:"
 				+ quantEstoque;
 	}
+
+	@Override
+	public void comprar(int quantidade) {
+		setQuantEstoque(getQuantEstoque()+quantidade);
+	}
 }

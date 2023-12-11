@@ -89,4 +89,5 @@ public abstract class Produto {
     public void setQuantEstoque(int quantEstoque) {
         this.quantEstoque = quantEstoque;
     }
+    
 }

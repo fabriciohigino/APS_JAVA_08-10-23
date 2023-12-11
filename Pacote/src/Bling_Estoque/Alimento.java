@@ -83,4 +83,9 @@ public class Alimento extends Produto implements Vendavel {
 	public String toString() {
 		return "Alimento marca:" + marca + ", nome:" + nome + ", preco:" + preco + ", quantEmEstoque:" + quantEstoque;
 	}
+
+	@Override
+	public void comprar(int quantidade) {
+		setQuantEstoque(getQuantEstoque()+quantidade);
+	}
 }
